@@ -1,0 +1,431 @@
+@font-face {
+    font-family: Hero;
+    src: url("/fonts/Hero.otf");
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+body {
+    width: 1532px;
+    cursor: default; 
+    background: antiquewhite;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #ceaf86;
+    height: 1px;
+}
+.hidden{
+    display: none;
+}
+#nav-bar {
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+    top:5px;
+    position: fixed;
+    z-index: 99;
+    /* padding: 10px; */
+}
+#nav-bar-background{   
+    z-index: 97;
+    position: fixed;   
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    height: 78px;
+    top: -10px;
+   -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px); 
+    background-image: url('../img/nav-bar.jpg') !important;
+    width: 100%;
+}
+.color-change-bg-nav-bar{ 
+       -webkit-filter: blur(6px) !important;
+    -moz-filter: blur(6px) !important;
+    -o-filter: blur(6px) !important;
+    -ms-filter: blur(6px) !important;
+    filter: blur(6px) !important; 
+/*    background: #ffb366 !important;*/
+}
+#logo {
+    position: absolute;
+    left:0px;
+    width: 53px;
+    height: 42px;
+}
+#logo-container {
+    position: relative
+}
+#name{ 
+    font-family: Hero;
+    padding: 5px;
+    position: absolute;
+    left: 60px; 
+}
+.hover-lighten:hover{
+     -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+    opacity: 0.5;
+}
+.no-click {
+    cursor: default;
+}
+.high-click {
+    cursor: pointer;
+}
+.scroll-down{
+    -webkit-filter: hue-rotate(90deg);
+    filter: hue-rotate(90deg); 
+}
+#menu-drop-down {
+    left: 1230px;
+    margin-right: 40px;
+    /* left: calc(100% - 290px); */
+    position: relative;
+    width: 53px;
+    height: 42px;
+    
+}
+#menu-drop-down:hover {
+    width: 20px;
+    -webkit-transform:rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+     -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+#links{
+    left: 138px; 
+    position: relative;
+}
+#facebook {
+    position: relative;
+    width: 36px;
+    height: 31px;
+    margin-left: 20px;
+}
+#github {
+    position: relative;
+    width: 37px;
+    top: 1px;
+    height: 36px;
+    margin-left: 15px;
+}
+#linkedin {
+    position: relative;
+    width: 35px; 
+    top: 1px;
+    height: 34px;
+    margin-left: 15px;
+}
+#email {
+    position: relative;
+    width: 32px; 
+    top: 1px;
+    height: 32px;
+    margin-left: 15px;
+}
+#about-me {
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+    top: 56px;
+    position: relative; 
+    width: 100%;
+    padding: 10px;
+    align-content: center;
+}
+#profile-pic {
+    animation: fadein 3s;
+    -moz-animation: fadein 3s; /* Firefox */
+    -webkit-animation: fadein 3s; /* Safari and Chrome */
+    -o-animation: fadein 3s; /* Opera */
+    top: 70px;
+    position: relative;
+    right: calc(200px - 60%);
+    border-radius: 50%;
+    padding-left: 306px;
+    padding-right: 75px;
+    align-content: center;
+}
+#about-me-name {
+    color: aliceblue;
+    cursor: default; 
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -o-transition: all 2s ease;
+    transition: all 2s ease;
+    position: relative;
+    padding-bottom: 2px;
+    left: 14px;
+    top: -394px;
+    font-size: xx-large;
+    text-decoration: underline;
+    text-decoration-color: #c5b181;
+    
+}
+#about-me{
+    overflow: hidden;    
+    height: 710px;
+    background-image: url('../img/about-me-wallpaper.jpg');
+}
+#about-me-name:hover {
+    color:floralwhite;
+    text-decoration-color: red;
+}
+#about-me-text{ 
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -o-transition: all 2s ease;
+    transition: all 2s ease;
+    cursor: default;
+    color: aliceblue;
+    position: relative;
+    top: -374px;
+    font-size: 150%;
+    max-width: 60%;
+    padding-left: 10px;
+}
+#about-me-text:hover{  
+    color:floralwhite;
+}
+.button {
+    cursor: pointer;
+    color: cornsilk;
+    content: '';
+    position: relative; 
+    padding: 10px;
+    width: 300px;
+    margin: 20px;
+    font-size: x-large;
+    padding-left: 20px;
+    padding-right: 20px;
+    right: -161px;
+    top: -349px;
+    border-style: solid;
+    display: block;
+     -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all .4s ease;
+    transition-delay: 0s;
+    box-shadow: inset 0 0 0 0 #c5b181;
+}
+.button:hover {
+    background-color: beige;
+    color:dimgray;
+}
+.tab{  
+      animation: fadein 4s;
+    -moz-animation: fadein 4s; /* Firefox */
+    -webkit-animation: fadein 4s; /* Safari and Chrome */
+    -o-animation: fadein 4s; /* Opera */
+    overflow: hidden;
+    padding: 70px;
+    padding-bottom: 0px;
+}
+#img-bg{
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    z-index: -1;
+    display: block;
+    background-size: cover; 
+    top: 763px;
+    left: -10px;
+    height: 480px;
+    width: 1543px;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+    overflow-x: hidden;
+    background-image: url(../img/work.jpg);
+}
+h2 { 
+    color: aliceblue;
+    cursor: default;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -o-transition: all 2s ease;
+    transition: all 2s ease; 
+    padding-bottom: 2px; 
+    font-size: xx-large;
+    text-decoration: underline;
+    text-decoration-color: #c5b181;
+}
+h2:hover{
+    color:floralwhite;
+    text-decoration-color: red;
+}
+
+.work-company{
+    padding: 40px;
+}
+#ap-logo{
+    -webkit-filter: invert(1);
+    -moz-filter: invert(1);
+    -o-filter: invert(1);
+    -ms-filter: invert(1);
+    filter: invert(1);
+    width: 500px;
+}
+.work-position{
+    position: relative;
+    left: 551px;
+    font-size: x-large;
+    top: -118px;
+    color:antiquewhite;
+}
+.work-term{
+    position: relative;
+    left: 551px;
+    font-size: 20px;
+    top: -118px;
+    color:antiquewhite;
+}
+.job-description{
+    cursor: default;
+    color: antiquewhite;
+    left: 551px;
+    font-size: 24px;
+    top: -109px;
+    font-weight: bold;
+    width: 845px;
+    position: relative;
+     -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+.keyword{
+    
+     -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -o-transition: all 2s ease;
+    transition: all 2s ease;
+    color: aliceblue;
+}
+.keyword:hover{
+    color: bisque;
+}
+#projects{
+        height: 1072px;
+    
+        top: -31px;
+    position: relative;
+}
+#arch-hacks-logo{
+    width: 370px;
+}
+#img-bg-2{
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    z-index: -2;
+    display: block;
+    background-size: cover;
+    width: 110%;
+    top: 50px;
+    left: -10px;
+    height: 1023px;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+    overflow-x: hidden;
+    background-image: url(../img/projects-wallpaper.jpg);
+}
+.info-div{ 
+    position: relative;
+    top: -147px;
+}
+#bmp{
+        padding: 0px;
+    position: relative;
+    top: -129px;
+    left: 40px;
+}
+#bmp-logo{
+        top: -54px;
+    left: 76px;
+    position: relative;
+}
+#flappypu{
+    padding: 0px;
+    position: relative;
+    top: -262px;
+    left: 40px;
+}
+#flappy-pu-logo{
+       top: -7px;
+    left: -123px;
+    position: relative;
+    width: 600px;
+}
+#resume{ 
+    top: -22px;
+    position: relative;
+    font-size: xx-large;
+    left: 637px;
+    width: 10px;
+    height: 10px;
+}
+#dl-resume{
+    cursor: pointer;
+    width: 50px;
+    position: relative;
+    left: 135px;
+    top: -49px;
+}

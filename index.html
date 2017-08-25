@@ -1,101 +1,98 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="My Website">
-	  <meta name="keywords" content="Apurv,CS">
-  	<meta name="author" content="Apurv Prashanth">
-
-    <title>Apurv Prashanth | Welcome</title>
-    <link rel="stylesheet" href="./css/style.css">
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <div id="branding">
-<a href="index.html">
-          <h1><span class="highlight">Apurv</span> Prashanth</h1>
-<h3><span class="highlight1"> Computer Science at University of Waterloo</span></h3></a>
-        </div>
-        <nav>
-          <ul>
-            <li class="current"><a href="index.html">Home</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
-    <section id="showcase">
-      <div class="container">
-        <h1>About Me</h1>
-        <p>Hey! I am Apurv Prashanth, a first-year Computer Science student at University of Waterloo. I first started coding in Grade 10 on C++, and now I know many more languages. I have made a few projects which you can check out below. I am seeking for internships for Summer 2017.</p>
-      </div>
-    </section>
-
-    <section id="boxes">
-<h1>Projects and Apps</h1>
-      <div class="container">
-        <div class="box">
-
-<a href="https://github.com/TheOfficialPu/Bank-Project">
-          <img src="./img/logo_cpp.png"></a>
-
-          <h3>Bank Management Project</h3>
-<h6>Winter 2016</h6>
-
-          <p>A project that I made in High School to show the features of Object Oriented Programming in C++. Featured Data File Handling, Modulation, Encapsulation and Abstraction. </p>
-       </div>
-        <div class="box">
-
-<a href="https://github.com/TheOfficialPu/Alertify-ArchHacks2016">
-          <img src="./img/logo_AS.png"></a>
-          <h3>Alertify</h3>
-<h6>Fall 2016</h6>
-
-          <p>An Android App that I made at ArchHacks 2016 which would store a patients information on the phone and would send the data to the nearest hospital with the push of a button on the notification tab.</p>
-        </div>
-        <div class="box">
-<a href="https://github.com/TheOfficialPu/snake-game">
-          <img src="./img/logo_cpp.png"></a>
-          <h3>Snake Game</h3>
-<h6>Fall 2014</h6>
-          <p>A basic snake game which I made to learn C++.</p>
-        </div>
-      </div>
-    </section>
-<section id="skills">
-<div class="container">
-
-<div id="skills">
-        <h1 class="heading">Skills and Tools</h1>
-        <ul><li>C++</li>
-            <li>C</li>
-<li>Racket</li>
-<li>Photoshop</li>
-            <li>SQL</li>
-            <li>HTML</li>
-            <li>JavaScript</li>
-            <li>CSS</li>
-            <li>Android Studio</li>
- <li>Java</li>
-        </ul>
-</div>
-</section>
-<section id="educ">
-<h1>Education</h1>
-      <div class="container">
-        <div class="box">
-
-          <img src="./img/uw.png">
-
-          <h3>University of Waterloo</h3>
-<h6>Bachelor of Computer Science, Co-op</h6>
-  </div>
-    </section>
-    <footer>
-      <p>Apurv Prashanth, No Copyright &copy; 2017</p>
-    </footer>
-  </body>
+    <title>Apurv Prashanth | Home</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/index.css">
 </html>
+<body>
+    <span id= 'nav-bar'>
+        <span class = 'hover-lighten high-click' id='logo-container'>
+            <img id = 'logo' src="img/logo.png"> 
+        </span>
+        <span id='links'>
+            <img id = 'facebook' class = 'high-click hover-lighten' src='img/facebook.png'> 
+            <img id = 'github' class = 'high-click hover-lighten' src='img/github.png'>
+             <img id = 'linkedin' class = 'high-click hover-lighten' src='img/linkedin.png'>
+            <img id = 'email' class = 'high-click hover-lighten' src='img/email.png'>
+        </span>
+        <img id = 'menu-drop-down'class= 'high-click' src="img/menu.svg">
+    </span>
+    <div id='nav-bar-background'></div>
+    <div id = 'about-me'>
+        <img id = 'profile-pic' src="img/profile-pic.png">
+        <div id= 'about-me-name'>Apurv Prashanth</div>
+        <div id = "about-me-text">Hey! I am Apurv Prashanth, a second-year Computer Science student at University of Waterloo. I love Web Development, especially UI/UX. I am planning on getting a minor in Combinatorics and Optimization. I first started coding in Grade 10 on C++ and SQL which eventually led me to coding in HTML/CSS/JS and Python. I have made a few projects which you can check out below.</div>
+        <div id='projects-button' class='button'>Projects</div>
+        <div id = 'work-button' class='button'>Work Experience</div>
+    </div>
+    <div id = 'work' class='tab'>
+        <div id = 'img-bg'></div>
+        <h2>Work Experience</h2>
+        <div id = 'ark-paradigm' class='work-company'>
+            <span class='company-name'>
+                <img id='ap-logo' src="img/ark-paradigm.png">
+            </span>
+            <div class='work-position'>Web Developer</div>
+             <div class = 'work-term'>
+                Spring 2017
+            </div>
+            <div class ='job-description'>
+                Worked as a Web Developer focussing on the 
+                <span class="keyword">front-end</span> using <span class="keyword">HTML</span>, <span class="keyword">CSS</span>, <span class="keyword">JavaScript(JQuery)</span>. Also set up the <span class="keyword">back-end</span> using <span class="keyword">Flask</span> and <span class="keyword">SQLAlchemy</span>.
+            </div>
+        </div>
+    </div>
+    <div id='projects' class="tab">
+        <div id = 'img-bg-2'></div>
+        <h2>Projects</h2>
+        <div id='alertify' class='work-company'>
+            <span class='company-name'>
+                <img id='arch-hacks-logo' src="img/archhackslogo-title.png">
+            </span> 
+            <span class='info-div'>
+                <div class='work-position'>Alertify</div>
+                 <div class = 'work-term'>
+                    ArchHacks 2016, Washington University in St. Louis
+                </div>
+                <div class ='job-description'>
+                    An <span class="keyword">Android App</span> that I made at ArchHacks 2016 which would store a patients information on the phone and would send the data to the nearest hospital with the push of a button on the notification tab using <span class="keyword">Google's Location API</span>.
+                </div>
+            </span>
+        </div>
+        <div id='bmp' class='work-company'>
+            <span class='company-name'>
+                <img id='bmp-logo' src="img/Bank.png">
+            </span> 
+            <span class='info-div'>
+                <div class='work-position'>Bank Management Project</div>
+                 <div class = 'work-term'>
+                    Summer 2016, Indian School Al-Ghubra
+                </div>
+                <div class ='job-description'>
+                    12th Grade final project that used the <span class="keyword">Object Oriented Programming</span> functionalities of <span class="keyword">C++</span>.
+                </div>
+            </span>
+        </div> 
+        <div id='flappypu' class='work-company'>
+            <span class='company-name'>
+                <img id='flappy-pu-logo' src="img/flappybirds.png">
+            </span> 
+            <span class='info-div'>
+                <div class='work-position'>FlappyPu - A Flappy Bird Clone</div>
+                 <div class = 'work-term'>
+                    Summer 2017, University of Waterloo
+                </div>
+                <div class ='job-description'>
+                    A side project I did for fun to learn the <span class="keyword">LibGDX</span> framework for <span class="keyword">Android Studio</span>. Prioritizes game screens using a stack and the algorithms to manage gravity, speed and movements of the bird are controlled using vectors.
+                </div>
+            </span>
+        </div>
+    </div>
+    <div id='resume'>
+    Resume
+        <img id='dl-resume' src="img/download.ico">
+    </div>
+</body>

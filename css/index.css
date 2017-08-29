@@ -2,6 +2,10 @@
     font-family: Hero;
     src: url("/fonts/Hero.otf");
 }
+@font-face {
+    font-family: fb;
+    src: url("/fonts/FACEBOLF.OTF");
+}
 
 @keyframes fadein {
     from {
@@ -84,8 +88,8 @@ body {
     -moz-filter: blur(6px) !important;
     -o-filter: blur(6px) !important;
     -ms-filter: blur(6px) !important;
-    filter: blur(6px) !important; 
-/*    background: #ffb366 !important;*/
+    filter: blur(6px) !important;  
+        height: 66px !important;
 }
 #logo {
     position: absolute;
@@ -120,16 +124,21 @@ body {
     filter: hue-rotate(90deg); 
 }
 #menu-drop-down {
-    left: 1230px;
-    margin-right: 40px;
+    
+    padding-top: 1%;
+    float: right;
+    right: 0px;
+    z-index: 100;
+    /* left: 1480px; */
+    margin-right: 10px;
     /* left: calc(100% - 290px); */
-    position: relative;
+    position: fixed;
     width: 53px;
     height: 42px;
     
 }
-#menu-drop-down:hover {
-    width: 20px;
+.menu-drop-down-hover {
+    width: 20px !important;
     -webkit-transform:rotate(90deg);
     -moz-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
@@ -140,45 +149,14 @@ body {
     -o-transition: all 0.5s;
     transition: all 0.5s;
 }
-#links{
-    left: 138px; 
-    position: relative;
-}
-#facebook {
-    position: relative;
-    width: 36px;
-    height: 31px;
-    margin-left: 20px;
-}
-#github {
-    position: relative;
-    width: 37px;
-    top: 1px;
-    height: 36px;
-    margin-left: 15px;
-}
-#linkedin {
-    position: relative;
-    width: 35px; 
-    top: 1px;
-    height: 34px;
-    margin-left: 15px;
-}
-#email {
-    position: relative;
-    width: 32px; 
-    top: 1px;
-    height: 32px;
-    margin-left: 15px;
-}
 #about-me {
     animation: fadein 2s;
     -moz-animation: fadein 2s; /* Firefox */
     -webkit-animation: fadein 2s; /* Safari and Chrome */
-    -o-animation: fadein 2s; /* Opera */
-    top: 56px;
+    -o-animation: fadein 2s; /* Opera */ 
     position: relative; 
     width: 100%;
+    top: 10px;
     padding: 10px;
     align-content: center;
 }
@@ -279,7 +257,7 @@ body {
     z-index: -1;
     display: block;
     background-size: cover; 
-    top: 763px;
+        top: 718px;
     left: -10px;
     height: 480px;
     width: 1543px;
@@ -331,7 +309,7 @@ h2:hover{
     left: 551px;
     font-size: 20px;
     top: -118px;
-    color:antiquewhite;
+    color:darkgrey;
 }
 .job-description{
     cursor: default;
@@ -347,8 +325,7 @@ h2:hover{
     -o-transition: all 0.4s ease;
     transition: all 0.4s ease;
 }
-.keyword{
-    
+.keyword{ 
      -webkit-transition: all 2s ease;
     -moz-transition: all 2s ease;
     -o-transition: all 2s ease;
@@ -357,6 +334,12 @@ h2:hover{
 }
 .keyword:hover{
     color: bisque;
+}
+.tool{
+    color: wheat;
+}
+.tool:hover{
+    color: aliceblue !important;
 }
 #projects{
         height: 1072px;
@@ -376,9 +359,9 @@ h2:hover{
     display: block;
     background-size: cover;
     width: 110%;
-    top: 50px;
+        top: 7px;
     left: -10px;
-    height: 1023px;
+    height: 1060px;
     -webkit-filter: blur(5px);
     -moz-filter: blur(5px);
     -o-filter: blur(5px);
@@ -386,6 +369,13 @@ h2:hover{
     filter: blur(5px);
     overflow-x: hidden;
     background-image: url(../img/projects-wallpaper.jpg);
+}
+#nav span{
+       position: relative;
+    top: 10px; 
+    padding: 10px;
+    padding-right: 50px !important;
+    font-size: x-large;
 }
 .info-div{ 
     position: relative;
@@ -428,4 +418,73 @@ h2:hover{
     position: relative;
     left: 135px;
     top: -49px;
+}
+#skills{
+    overflow: visible !important;
+       padding-top: 0px !important;
+}
+#skills span{
+    position: relative; 
+        top: 34px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: forestgreen;
+}
+
+#right-menu-bar{
+    height: 101%;
+    width: 100%;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    background-image: url('../img/menu.jpg');
+    z-index: 96;
+    position: fixed; 
+    left: 100%;
+        background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.right-menu-bar-peek{
+    left: 90% !important;
+}
+.right-menu-bar-opened{
+    left: 70% !important;
+}
+
+#links{     
+    left: 23px;
+    position: relative;
+}
+#contact-me-header{
+    color: dimgrey !important;
+    position: absolute;
+    padding-top: 11%;
+    padding-left: 3%;
+}
+
+#facebook { 
+    position: relative;
+    width: 200px;
+    padding-top: 20%;
+}
+#github { 
+      position: relative;
+    width: 144px;
+    padding-top: 2%;
+
+}
+#linkedin { 
+       position: relative;
+    width: 162px;
+    padding-top: 2%;
+}
+#email { 
+      font-family: fb;
+    position: relative;
+    width: 131px;
+    font-size: 45px;
+    font-weight: 900;
+    padding-top: 2%;
 }
